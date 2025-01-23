@@ -1,10 +1,14 @@
 import HeroBanner from "@/components/banner/HeroBanner";
+import Pagegap from "@/components/shared/Pagegap";
+import BlogPost from "@/components/BlogPost";
 
 const HomePage = () => {
   return (
-    <div>
+    <Pagegap>
       <HeroBanner />
-    </div>
+      <BlogPost/>
+
+    </Pagegap>
   );
 };
 

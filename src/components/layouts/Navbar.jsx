@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DarkModeToggle from "../DarkModeToggle";
 
 const Navbar = () => {
   const navLinks = (
@@ -9,7 +10,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="bg-base-100">
+    <div className="dark:bg-slate-800 bg-gray-100 sticky top-0 z-50">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -43,7 +44,8 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end space-x-4">
+          <DarkModeToggle />
           <a className="btn">Button</a>
         </div>
       </div>

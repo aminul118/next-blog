@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="bg-black/95 ">
-      <footer className="footer footer-center text-base-content rounded p-10 text-white">
+      <footer className="footer footer-center  rounded p-10 text-white">
         <h1 className="text-4xl font-bold flex">
           <span className="text-red-700 ">Next</span> Blog
         </h1>
@@ -44,8 +44,8 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by ACME
-            Industries Ltd
+            Copyright © {new Date().getFullYear()} - All right reserved by Next
+            Blog
           </p>
         </aside>
       </footer>
