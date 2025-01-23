@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@kinde-oss/kinde-auth-nextjs": "^2.4.6",
     "daisyui": "^4.12.23",
     "lottie-react": "^2.4.1",
     "next": "15.1.6",

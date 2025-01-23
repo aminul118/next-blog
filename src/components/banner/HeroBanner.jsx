@@ -8,8 +8,8 @@ const HeroBanner = () => {
         src="/home/blog.png"
         alt="Blog Banner"
         fill
+        sizes="(max-width: 768px) 100vw, 33vw"
         priority
-        sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 75vw, 50vw"
       />
     </div>
   );

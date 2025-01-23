@@ -1,7 +1,13 @@
 import Link from "next/link";
 import DarkModeToggle from "../DarkModeToggle";
+import {
+  RegisterLink,
+  LoginLink,
+  LogoutLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
-const Navbar = () => {
+const Navbar = async () => {
   const navLinks = (
     <>
       <li>
@@ -9,6 +15,10 @@ const Navbar = () => {
       </li>
     </>
   );
+  const { getUser } = getKindeServerSession();
+  const user = await getUser();
+
+  // console.log(user);
   return (
     <div className="dark:bg-slate-800 bg-gray-100 sticky top-0 z-50">
       <div className="navbar container mx-auto">
@@ -46,7 +56,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-4">
           <DarkModeToggle />
-          <a className="btn">Button</a>
+          {user?.email ? (
+            <LogoutLink className="btn btn-warning">Log out</LogoutLink>
+          ) : (
+            <LoginLink className="btn">Login</LoginLink>
+          )}
         </div>
       </div>
     </div>
