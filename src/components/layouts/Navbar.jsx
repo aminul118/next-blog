@@ -20,7 +20,7 @@ const Navbar = async () => {
 
   // console.log(user);
   return (
-    <div className="dark:bg-slate-800 bg-gray-100 sticky top-0 z-50">
+    <div className="dark:bg-slate-800 bg-gray-100 sticky top-0 z-50 shadow-md">
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
