@@ -1,3 +1,3 @@
 ## Next Blog
 
-![Next Blog](/landing-page.png)
+![Next Blog](/public/landing-page.png)
